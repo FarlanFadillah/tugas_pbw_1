@@ -1,0 +1,96 @@
+/* Fixes all overflow issues */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+.header p {
+  margin: 4px 0 0;
+  color: #888;
+  font-size: 13px;
+}
+
+.book-cover {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 20px;
+}
+
+.book-cover img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 180px;
+}
+
+.info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f7f7f7;
+  font-size: 15px;
+  color: #333;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #333;
+  background: #fff;
+}
+
+.form-group input[readonly] {
+  cursor: not-allowed;
+  background: #f4f4f4;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+}

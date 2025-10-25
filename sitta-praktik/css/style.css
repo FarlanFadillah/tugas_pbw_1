@@ -1,0 +1,84 @@
+body{
+    font-size: 15;
+    font-family: Arial;
+    display: flex;
+    padding: 100;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+i {
+    color : rgb(139, 139, 139);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(72, 141, 197);
+}
+input[type="email"], input[type="password"] {
+    outline: none;
+    border-width: 0px;
+    border-bottom: 5px ridge;
+    padding-top: 10;
+    padding: 5;
+}
+
+
+
+
+input:focus {
+    background-color: rgb(240, 240, 240);
+    outline: none;
+}
+
+.container {
+    width: 250px;
+    padding: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-style: outset;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10;
+    margin: 5;
+}
+
+.mb > * {
+    margin-top: 5px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title {
+    align-items: center;
+}
+
+#lupa_password { 
+    text-align: right;
+}
+
+#register {
+    text-align: center;
+}
+
+#login-btn{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(245, 192, 47);
+}
+
+#login-btn:hover {
+    cursor: pointer;
+}
