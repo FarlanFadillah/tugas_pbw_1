@@ -5,49 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Informasi Bahan Ajar</title>
   <link rel="stylesheet" href="./css/stock.css">
+  <link rel="stylesheet" href="./css/navbar.css">
 </head>
 <body>
+  <div class="navbar">
+        <ul>
+          <li><a href="./dashboard.html">Home</a></li>
+          <li><a href="./stock.html">Informasi Bahan Ajar</a></li>
+          <li><a href="./tracking.html">Tracking Pengiriman</a></li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Laporan</a>
+              <div class="dropdown-content">
+                  <a href="#">Monitoring Progress DO Bahan Ajar</a>
+                  <a href="#">Rekap Bahan Ajar</a>
+              </div>
+          </li>
+          <li><a href="#about">Histori Transaksi Bahan Ajar</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+    </div>
   <div class="container">
+    <div class="search-box">
+      <label for="kode-modul">Kode Modul</label>
+      <div class="input-group">
+        <input id="kode-modul" type="text" placeholder="Kode MODUL">
+        <button class="btn">Cari</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    
     <div class="header">
       <h2>Informasi Bahan Ajar</h2>
       <p>Peragaan Data Bahan Ajar</p>
     </div>
 
     <div class="book-cover">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Book_Cover_Example.png" alt="Cover Buku">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Book_Cover_Example.png">
     </div>
 
     <div class="info-form">
       <div class="form-group">
         <label>Kode Lokasi</label>
-        <input type="text" value="OTMP01" readonly>
+        <input id="kode-lokasi" type="text" readonly>
       </div>
 
       <div class="form-group">
         <label>Kode Barang</label>
-        <input type="text" value="ASIP4301" readonly>
+        <input id="kode-barang" type="text" readonly>
       </div>
 
       <div class="form-group">
         <label>Nama Barang</label>
-        <input type="text" value="Pengantar Ilmu Komunikasi" readonly>
+        <input id="nama-barang" type="text" readonly>
       </div>
 
       <div class="form-group">
         <label>Jenis Barang</label>
-        <input type="text" value="BMP" readonly>
+        <input id="jenis-barang" type="text" readonly>
       </div>
 
       <div class="form-group">
         <label>Edisi</label>
-        <input type="text" value="2" readonly>
+        <input id="edisi" type="text" readonly>
       </div>
 
       <div class="form-group">
         <label>Stok</label>
-        <input type="text" value="548" readonly>
+        <input id="stok" type="text" readonly>
       </div>
     </div>
   </div>
+  <script src="./js/session.js"></script>
+  <script src="./js/authentication.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/stock.js"></script>
 </body>
 </html>

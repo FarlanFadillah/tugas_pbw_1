@@ -9,6 +9,7 @@ body {
 .container {
   max-width: 600px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 /* Search box */
@@ -58,7 +59,7 @@ body {
 .info-row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .info-card h3 {
@@ -76,12 +77,11 @@ body {
   text-align: right;
 }
 
-.route {
-  font-weight: 500;
+.status {
   margin: 15px 0 5px;
 }
 
-.address {
+.ekspedisi {
   font-size: 14px;
   color: #d0d4f6;
   margin: 0;
@@ -103,7 +103,6 @@ body {
   padding-left: 0;
   margin: 0;
   border-left: 2px solid #ddd;
-  position: relative;
 }
 
 .timeline li {

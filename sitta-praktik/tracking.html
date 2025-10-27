@@ -5,8 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tracking</title>
   <link rel="stylesheet" href="./css/tracking.css" />
+  <link rel="stylesheet" href="./css/navbar.css">
 </head>
 <body>
+  <div class="navbar">
+        <ul>
+          <li><a href="./dashboard.html">Home</a></li>
+          <li><a href="./stock.html">Informasi Bahan Ajar</a></li>
+          <li><a href="./tracking.html">Tracking Pengiriman</a></li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Laporan</a>
+              <div class="dropdown-content">
+                  <a href="#">Monitoring Progress DO Bahan Ajar</a>
+                  <a href="#">Rekap Bahan Ajar</a>
+              </div>
+          </li>
+          <li><a href="#about">Histori Transaksi Bahan Ajar</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+    </div>
   <div class="container">
     <div class="search-box">
       <label for="nomor_do">No. DO/Billing</label>
@@ -18,23 +35,19 @@
 
     <div class="info-card">
       <div class="info-row">
-        <div>
-          <h3>ROIKA HEPRIDA SITIO</h3>
-          <h4>18503964974</h4>
+        <div class="info-mahasiswa">
         </div>
         <div class="info-date">
-          <p>2021-03-10</p>
-          <p>05.56.02</p>
         </div>
       </div>
-      <p class="route">TANGERANG SELATAN → PEMATANGSIANTAR</p>
-      <p class="address">JALAN DANAU LAUH TAWAR 03 KELURAHAN</p>
+      <p class="status"></p>
+      <p class="ekspedisi"></p>
     </div>
 
     <div class="tracking">
       <h3>Perjalanan Paket</h3>
       <ul class="timeline">
-        <li>
+        <!-- <li>
           <div class="dot"></div>
           <div class="content">
             <p>Selesai antar di PEMATANGSIANTAR</p>
@@ -83,9 +96,13 @@
             <p>Penerimaan di Loket: TANGERANG SELATAN. Pengirim: Universitas Terbuka</p>
             <span>2021-03-23 16:55:21</span>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
+  <script src="./js/session.js"></script>
+  <script src="./js/authentication.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/tracking.js"></script>
 </body>
 </html>
