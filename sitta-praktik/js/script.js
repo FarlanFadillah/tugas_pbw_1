@@ -12,7 +12,7 @@ login_form.addEventListener('submit', (event)=>{
         return user.email === formData.get('email') 
         && user.password === formData.get('password')
     })
-    if(!user) return alert('email/password is incorrect'); 
+    if(!user) return openModal('Warning','email/password is incorrect'); 
 
     createSession({name : user.name, email : user.email});
     window.location.href = '/sitta-praktik/dashboard.html'

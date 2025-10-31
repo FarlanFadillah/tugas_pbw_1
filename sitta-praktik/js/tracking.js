@@ -6,7 +6,7 @@ lacak_btn.addEventListener('click', (event)=>{
     if(!no_do) return;
 
     const data_tracking = dataTracking[no_do];
-    if(!data_tracking) return alert('Data not found');
+    if(!data_tracking) return openModal('Warning','Data not found');
     console.log(data_tracking);
 
     // info card section

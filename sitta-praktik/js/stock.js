@@ -4,13 +4,13 @@ const btn = document.querySelector('.btn');
 
 btn.addEventListener('click', (event)=>{
     const kode = kode_modul.value;
-    if(!kode) return alert('Isi Kode Bahan Ajar terlebih dahulu');
+    if(!kode) return openModal('Warning','Isi Kode Bahan Ajar terlebih dahulu');
 
     const data = dataBahanAjar.find(bahanAjar => {
         return bahanAjar.kodeBarang === kode;
     })
 
-    if(!data) return alert('Bahan Ajar tidak ditemukan');
+    if(!data) return openModal('Error','Bahan Ajar tidak ditemukan');
 
     document.querySelector('.book-cover > img').src = data.cover;
     document.querySelector('#kode-lokasi').value = data.kodeLokasi;
