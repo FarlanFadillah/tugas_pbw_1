@@ -1,7 +1,3 @@
-/* Fixes all overflow issues */
-* {
-  box-sizing: border-box;
-}
 
 /* Search box */
 .search-box label {

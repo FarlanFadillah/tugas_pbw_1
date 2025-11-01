@@ -12,6 +12,13 @@ body {
   padding: 10px;
 }
 
+.container > div {
+  /* horizontal offset, vertical offset, blur value, color */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
 /* Search box */
 .search-box label {
   display: block;
