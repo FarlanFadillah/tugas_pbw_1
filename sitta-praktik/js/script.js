@@ -11,7 +11,8 @@ login_form.addEventListener('submit', (event)=>{
     const user = dataPengguna.find(user => {
         return user.email === formData.get('email') 
         && user.password === formData.get('password')
-    })
+    });
+    
     if(!user) return openModal('Warning','email/password is incorrect'); 
 
     createSession({name : user.name, email : user.email});

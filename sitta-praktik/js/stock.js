@@ -16,7 +16,7 @@ btn.addEventListener('click', (event)=>{
     document.querySelector('#kode-lokasi').value = data.kodeLokasi;
     document.querySelector('#kode-barang').value = data.kodeBarang;
     document.querySelector('#nama-barang').value = data.namaBarang;
-    document.querySelector('#jenis-barang').value = data.namaBarang;
+    document.querySelector('#jenis-barang').value = data.jenisBarang;
     document.querySelector('#edisi').value = data.edisi;
     document.querySelector('#stok').value = data.stok;
 })

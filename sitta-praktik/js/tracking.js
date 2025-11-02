@@ -3,11 +3,10 @@ const nomor_do = document.querySelector('#nomor_do');
 
 lacak_btn.addEventListener('click', (event)=>{
     const no_do = nomor_do.value;
-    if(!no_do) return;
+    if(!no_do) return openModal('Warning', 'Isi Nomor DO / Billing terlebih dahulu');
 
     const data_tracking = dataTracking[no_do];
     if(!data_tracking) return openModal('Warning','Data not found');
-    console.log(data_tracking);
 
     // info card section
     const info_card = document.querySelector('.info-card');
